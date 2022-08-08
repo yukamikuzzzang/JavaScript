@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- 브라우저에 직접 표시되지는 않는 정보는 <head>, 브라우저에 렌더링되어 표시되는 <body> -->
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Title</title>
+</head>
+<body>
+    <h1>My first application</h1>
+    <p><b>Welcome to <i>Learning JavaScript, 3rd Edition</i>.</b></p>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="main.js"></script> <!-- script 파일은 바디 마지막에 넣는 것이 효율적 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.25/paper-full.min.js"></script> <!-- Paper.js 불러옴 -->
+    <canvas id="mainCanvas"></canvas>
+    <!-- id 페이지 하나에 하나씩 사용하도록 정의된 부분. HTML의 모든 요소에 사용가능. -->
+</body>
+</html>
+<!--
+    라이브러리를 링크하는 순서가 중요하다.
+    main.js에서 제이쿼리와 Paper.js를 모두 사용해야하기에 이들을 먼저 링크해야한다.
+    제이쿼리와 Paper.js와의 관계는 없기에 순서는 상관없지만 항상 제이쿼리를 먼저 링크하는 습관을 가지자.
+-->
